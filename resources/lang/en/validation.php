@@ -135,9 +135,20 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'Please fill out the :attribute',
+            'min'=>'The length of :attribute must be 3 charecter',
+            'max'=>'The length of :attribute must be less than 20 charecter'
         ],
+        'age'=>[
+            'required'=>'Please fill out the :attribute'
+        ],
+        'gender'=>[
+            'required'=>'Please select a gender'
+        ],
+        'city'=>[
+            'required'=>'Enter your :attribute'
+        ]
     ],
 
     /*
@@ -151,6 +162,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+
+        'name'=>'full name'
+    ],
 
 ];
