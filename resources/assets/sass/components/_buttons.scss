@@ -1,0 +1,67 @@
+.btn{
+    $btn: &;
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+    
+    &--primary{
+        font-size:1.6rem;
+        font-weight: 500;
+        color: $black;
+        background-color: $primary;
+        padding: 1rem 2rem;
+        border-radius: .25rem;
+
+        &:hover,
+        &:focus{
+            background-color: transparentize($primary, .2);
+        }
+    }
+
+    &--icon{
+        font-size: 1.6rem;
+        color: $dark;
+        // border: 1px solid black;
+
+        #{$btn}__icon{
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:focus{
+            color: transparentize($dark, .5);
+        }
+    }
+
+    &--create{
+        display: flex;
+    }
+
+    &--edit{
+        margin: 0  .5rem 0 0;
+    }
+    
+    &--delete{
+        margin: 0  0 0 .5rem;
+    }
+    
+    &--add{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+
+    &__icon{
+        margin:  0 .25rem 0 0;
+    }
+    
+    &__txt{
+        margin:  0 0 0 .25rem;
+    }
+
+}   

@@ -1,0 +1,46 @@
+.table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    $table:&;
+
+   
+    &__thead{
+        #{$table}--homeSec &{
+            background-color: $primary;
+        }
+    }
+
+    &__tbody{
+    
+    }
+
+    &__tr{
+        border: 1px solid #eee;
+        
+        &--tbody:nth-child(even){
+            background-color: $light;
+        }
+       
+    }
+
+    &__th{
+        border: 1px solid #eee;
+        padding: 1.5rem .5rem;
+        text-align: left;
+    }
+
+    &__td{
+        border: 1px solid #eee;
+        padding: 1rem .5rem;
+        text-align: left;
+        $td:&;
+
+        &-wrap{
+
+            #{$td}--action &{
+               text-align: center;
+            }
+        }
+    }
+}

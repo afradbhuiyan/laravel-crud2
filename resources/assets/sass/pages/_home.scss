@@ -1,0 +1,49 @@
+
+
+body{
+    background-color: #eeeeeea8;
+}
+
+.main-wrap{
+    margin: auto 0;
+}
+
+
+.home-sec{
+    // border: 1px solid black;
+    &__row{
+        // border: 1px solid black;
+    }
+
+    &__col{
+        background-color: $white;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        // border: 1px solid black;
+    }
+
+    &__title{
+        // border: 1px solid black;
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
+
+    &__subTitle{
+        margin: auto auto auto 0;
+        // border: 1px solid black;
+        border-left: .3rem solid $primary;
+        padding: .2rem 0 .2rem .3rem;
+    }
+
+    &__topBar{
+        // border: 1px solid black;
+        margin: 0 0 2.5rem 0;
+        display: flex;
+    }
+
+    &__table{
+        margin: 2.5rem 0 0 0;
+        // border: 1px solid black;
+    }
+}

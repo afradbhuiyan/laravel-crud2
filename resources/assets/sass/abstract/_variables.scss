@@ -1,0 +1,62 @@
+
+//colors
+$primary   : #69ffc5;
+$secondary : #6c757d;
+$success   : #28a745;
+$info      : #17a2b8;
+$warning   : #ffc107;
+$danger    : #dc3545;
+$light     : #f8f9fa;
+$dark      : #343a40;
+$black     : #000000;
+$white     : #FDFDFD;
+
+//font
+$font-family-primary: 'Poppins', sans-serif;
+
+//body
+$body-color       : $white;
+$body-font-family : $font-family-primary; 
+$body-font-size   : 1.6rem; 
+$body-font-weight : 400;
+
+//forms
+$form-input-font-size     : 1.6rem;
+$form-input-font-weight   : 500;
+$form-input-border-width  : .15rem;
+$form-input-border-radius : .25rem;
+$form-input-border-color  : $light;
+$form-input-bg            : $white;
+$form-input-padding       : 1rem;
+$form-textarea-height     : 5rem;
+
+//breckpoint
+$breckpoints: (
+    xs: 0px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+//html font size in diffrent breckpoints
+$html-font-sizes: (
+    xs:37.5%, //6px
+    sm:43.75%, //7px
+    md:50%, //8px
+    lg:56.25%, //9px
+    xl:62.5% //10px
+);
+
+//headings font size
+$heading-base-font-size: 4;
+$heading-font-sizes:(
+    h1: $heading-base-font-size + rem,
+    h2: (math.div($heading-base-font-size, 100) * 70) + rem,
+    h3: (math.div($heading-base-font-size, 100) * 65) + rem,
+    h4: (math.div($heading-base-font-size, 100) * 50) + rem,
+    h5: (math.div($heading-base-font-size, 100) * 40) + rem,
+    h6: (math.div($heading-base-font-size, 100) * 30) + rem
+);
+
+//buttons
