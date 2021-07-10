@@ -81,6 +81,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        {{ $students->links('components.pagination') }}
                     @else
                         <div>
                             <h4>No records Found</h4>

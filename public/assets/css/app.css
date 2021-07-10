@@ -1508,6 +1508,47 @@ h6 {
   margin: 0 0 0 0.25rem;
 }
 
+.pagination {
+  display: flex;
+  margin: 3rem 0 0 0;
+}
+.pagination__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.pagination__item:not(.pagination__item--ctrl, .pagination__item--dots) {
+  border: 0.15rem solid #eee;
+  margin: 0 0.6rem;
+}
+.pagination__item--ctrl {
+  border: 0.15rem solid #eee;
+}
+.pagination__item--dots {
+  margin: 0 1rem;
+}
+.pagination__item--active {
+  background-color: #69ffc5;
+}
+.pagination__item--active .pagination__link {
+  color: #000000;
+}
+.pagination__link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6c757d;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+.pagination__txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
 body {
   background-color: #eeeeeea8;
 }

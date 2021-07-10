@@ -14,7 +14,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students = Student::orderBy('id','desc')->get();
+        
+        $students = Student::orderBy('id','desc')->paginate(10);
 
         return view('pages.home',[
 
@@ -74,7 +75,6 @@ class StudentController extends Controller
      */
     public function edit(Student $student, $id)
     {
-
         $student = Student::find($id);
 
         return view('pages.edit',[

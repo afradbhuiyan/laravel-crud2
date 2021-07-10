@@ -1,0 +1,65 @@
+.pagination{
+    // border: 1px solid black;
+    display: flex;
+    margin: 3rem 0 0 0;
+    $pagination:&;
+
+    &__list{
+        display: flex;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+       
+    }
+
+    &__item{
+        $item:&;
+
+        &:not(#{$item}--ctrl, #{$item}--dots){
+            border: .15rem solid #eee;
+            margin: 0 .6rem;
+        }
+    
+    
+        &--ctrl{
+            border: .15rem solid #eee;
+        }
+
+        // &--num{
+        //     border-color: green;
+        // }
+
+        &--dots{
+          margin: 0 1rem;
+        }
+        
+        &--active{
+            background-color: $primary;
+
+            #{$pagination}__link{
+
+                color: $black;
+            }
+        }
+    }
+
+
+
+    &__link{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $secondary;
+        display: inline-block;
+        padding: .4rem .8rem;
+        text-decoration: none;
+        border-radius: .25rem;
+
+    }
+
+    &__txt{
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: .2rem;
+    }
+
+}
